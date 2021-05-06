@@ -1,34 +1,51 @@
-import React from 'react';
-import{Nav,NavLink,Bars,NavMenu} from './NavbarElements';
+import React,{ useState } from 'react';
+//import{Nav,NavLink,Bars,NavMenu} from './NavbarElements';
+import './NavbarElements.css';
+import logo from '../../images/logo.png'
+import MenuIcon from '@material-ui/icons/Menu';
+import ClearIcon from '@material-ui/icons/Clear';
 
-const Navbar = () => {
+function Navbar({location}) {
+    const [icons, seticons] = useState(false)
+    const [classna, setclassna] = useState('slider')
     return (
-        <>
-           <Nav>
-              <NavLink to="/">
-             <img src={require('../../images/logo.png')} alt = 'logo'/>
-               </NavLink>
-               <Bars/>
-              <NavMenu>
-                  <NavLink to="/Home" activestyle>
-                      Home
-                      </NavLink>
-                      <NavLink to="/Requests" activestyle>
-                      Requests
-                      </NavLink>
-                      <NavLink to="/Driver Details" activestyle>
-                      Driver Details
-                      </NavLink>
-                      <NavLink to="/Signup" activestyle>
-                      Sign Up
-                      </NavLink>
-                  </NavMenu>
-                 {/* <NavBtn>
-                      <NavBtnLink to = "/signin">Sign In</NavBtnLink>
-                 </NavBtn> */}
-           </Nav> 
-        </>
-    );
+        <div className='navbar'>
+            <img className='navbar_logo' src={logo} alt='logo' />
+            <div className='menu-toggle' onClick={()=>{
+                var bola = !icons
+                seticons(!icons)
+                if(bola===false){
+                    setclassna('mid')
+                    setTimeout(() => {
+                        setclassna(bola ? 'active' : 'slider')
+                    }, 1000)
+                }else{
+                    setclassna(bola ? 'active' : 'slider')
+                }
+                }}>
+                {!icons ?
+                    <MenuIcon style={{fontSize:'30px',color:'white'}} /> :
+                    <ClearIcon style={{fontSize:'30px',color:'white'}} />
+                }
+            </div>
+            <nav className={classna}>
+                
+                <a href='/home'>Home</a>
+                <a href='/requests'>Requests</a>
+                <a href='/driverdetails'>DriverDetails</a>
+                <a href='/signup'>Signup</a>
+               <a href='/login'>Login</a>
+                {location==='home' && <div className="animation start-home" />}
+                {location==='requests' && <div className="animation start-requests" />}
+                {location==='driverdetails' && <div className="animation start-driverdetails" />}
+                {location==='signup' && <div className="animation start-signup" />}
+               {location=== 'login' && <div className="animation start-login" />}
+            </nav>
+            <div className='clearfix'></div>
+        </div>
+    )
 }
 
 export default Navbar;
+
+

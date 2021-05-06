@@ -1,12 +1,16 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
 import './Form.css';
-
-const FormSignup = () => {
+import Imageslider from './Imageslider';
+const Login = () => {
     return (
-        <div className='form-content-right'>
+        <div >
+             <Navbar location='login' />
+             <div className = 'alignmentsign'>
+             <div className='form-content-right'>
             <form className ='form'>
               <h1>
-                Signup
+                Login
                 </h1>
           <div className='form-inputs'>
             <label htmlFor='email' className='form-label'></label>
@@ -65,7 +69,13 @@ const FormSignup = () => {
         </div>  
         </form>
       </div>
+      <div className = 'alignmentslider'>
+      <Imageslider/>
+      </div>
+      </div>
+        </div>
+
     )
 }
 
-export default FormSignup
+export default Login;

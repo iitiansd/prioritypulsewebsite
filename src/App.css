@@ -1,3 +1,12 @@
+
+.App {
+  /* text-align: center; */
+  width: 99vw;
+  position: absolute;
+  overflow: hidden;
+  min-height: 100vh;
+  /* visibility: hidden; */
+}
 @import url('https://fonts.googleapis.com/css?family=Sora&display=swap');
 *{
   font-family:'Sora',sans-serif;
