@@ -3,7 +3,7 @@ import FormSignup from './FormSignup';
 import Imageslider from './Imageslider';
 import './Form.css';
 import Navbar from '../components/Navbar';
-import { FooterContainer } from '../containers/footer'
+import Footer from '../components/Footer';
 //style={{display:'flex',justifyContent:'center',alignItems:'center',height:'50vh',border:'1px black solid'}}
 const Signup = () => {
     return (
@@ -15,7 +15,7 @@ const Signup = () => {
             <Imageslider/>
             </div>
             </div>
-           <FooterContainer/>
+           <Footer/>
           
         </div>
     )

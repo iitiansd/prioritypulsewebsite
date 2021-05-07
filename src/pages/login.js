@@ -2,16 +2,22 @@ import React from 'react'
 import Navbar from '../components/Navbar';
 import './Form.css';
 import Imageslider from './Imageslider';
+import Footer from '../components/Footer'
 const Login = () => {
     return (
         <div >
              <Navbar location='login' />
              <div className = 'alignmentsign'>
-             <div className='form-content-right'>
+             <div className='form-content-left'>
             <form className ='form'>
               <h1>
                 Login
                 </h1>
+                <div className = 'makemiddle'>
+                <span className = 'form-input-log'>
+         welcome to priority pulse <a href = '/login'>your pulse our priority</a> 
+        </span>
+        </div>
           <div className='form-inputs'>
             <label htmlFor='email' className='form-label'></label>
             <input
@@ -35,36 +41,15 @@ const Login = () => {
             />
           
           </div>
-          <div className='form-inputs'>
-            <label htmlFor='password2' className='form-label'></label>
-            <input
-            id='password2'
-              className='form-input'
-              type='password'
-              name='password2'
-              placeholder='ConfirmPassword' 
-       />
-            
-          </div>
-          <div className='form-inputs'>
-            <label htmlFor='uniquecode' className='form-label'></label>
-            <input
-            id='uniquecode'
-              className='form-input'
-              type='text'
-              name='uniquecode'
-              placeholder='Unique Code' 
-           />
-            
-          </div>
+        
           <div className = 'makemiddle'>
           <div>
           <button  classname = 'button' type='submit'>
-                         Sign up
+                         Login
               </button>
               </div>
               <span className = 'form-input-login'>
-         Do you   <a href='/login'>already have an account</a> 
+         Do you want to <a href='/signup'>create an account ?</a> 
         </span>
         </div>  
         </form>
@@ -73,6 +58,7 @@ const Login = () => {
       <Imageslider/>
       </div>
       </div>
+      <Footer/>
         </div>
 
     )

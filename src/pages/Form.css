@@ -8,7 +8,15 @@
     /*margin-left:10vh;*/
     /* linear-gradient(90deg, rgb(177, 176, 241) 0%, rgb(177, 176, 241) 100%);*/
   }
-  
+  .form-content-left {
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    background: #ecd6f3;
+    height:45vh;
+    width: 45vh;
+    /*margin-left:10vh;*/
+    /* linear-gradient(90deg, rgb(177, 176, 241) 0%, rgb(177, 176, 241) 100%);*/
+  }
   /*.form {
     position: absolute;
     top: 50%;
@@ -26,7 +34,8 @@
     font-size: 1.6rem;
     text-align:center;
     width: 100%;
-    margin-bottom: 1rem;
+    marign-top:0.5rem;
+    margin-bottom: 0.5rem;
     color: rgb(2, 2, 2);
     font-weight: 600;
   }
@@ -69,7 +78,7 @@
     display:flex;
     margin-left: 0%;
     align-Items:center;
-    height:80vh;
+    height:60vh;
    flex-direction: row;
    justify-content: space-evenly;
   }
@@ -146,6 +155,19 @@ flex-direction: column;
     text-align: center;
 
   }
+  .form-input-log {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: rgb(22, 22, 22);
+    width: 100%;
+    text-align: center;
+  margin-bottom:1rem ;
+  }
+  .form-input-log a {
+    text-decoration: none;
+    color: #d401d4;
+    font-weight: 600;
+  }
   
   .form-input-login a {
     text-decoration: none;
@@ -157,3 +179,28 @@ flex-direction: column;
     max-height:700px;
     margin: auto;
   }
+/*
+  @media screen and (max-width: 860px){
+    .alignmentsign{
+      display:flex;
+      margin-left: 0%;
+      align-Items:center;
+      height:100vh;
+     flex-direction: column;
+     justify-content: space-evenly;
+    }
+    .form-content-right {
+      border-radius: 10px 10px 10px 10px;
+      position: relative;
+      background: #ecd6f3;
+      height:35vh;
+      width: 45vh;
+      /*margin-left:10vh;*/
+      /* linear-gradient(90deg, rgb(177, 176, 241) 0%, rgb(177, 176, 241) 100%);*/
+    /*}
+    .Carousel{
+      max-width:auto;
+      max-height:auto;
+      margin: auto;
+    }
+  }*/
