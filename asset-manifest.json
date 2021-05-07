@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/prioritypulsewebsite/static/css/main.1be95841.chunk.css",
+    "main.js": "/prioritypulsewebsite/static/js/main.6aaee9cc.chunk.js",
+    "main.js.map": "/prioritypulsewebsite/static/js/main.6aaee9cc.chunk.js.map",
+    "runtime-main.js": "/prioritypulsewebsite/static/js/runtime-main.52e15b40.js",
+    "runtime-main.js.map": "/prioritypulsewebsite/static/js/runtime-main.52e15b40.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/prioritypulsewebsite/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.f30308a4.chunk.js": "/prioritypulsewebsite/static/js/2.f30308a4.chunk.js",
+    "static/js/2.f30308a4.chunk.js.map": "/prioritypulsewebsite/static/js/2.f30308a4.chunk.js.map",
+    "index.html": "/prioritypulsewebsite/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/prioritypulsewebsite/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.1be95841.chunk.css.map": "/prioritypulsewebsite/static/css/main.1be95841.chunk.css.map",
+    "static/js/2.f30308a4.chunk.js.LICENSE.txt": "/prioritypulsewebsite/static/js/2.f30308a4.chunk.js.LICENSE.txt",
+    "static/media/img1.e1e5fa54.jpg": "/prioritypulsewebsite/static/media/img1.e1e5fa54.jpg",
+    "static/media/logo.8ee2a640.png": "/prioritypulsewebsite/static/media/logo.8ee2a640.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52e15b40.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.f30308a4.chunk.js",
+    "static/css/main.1be95841.chunk.css",
+    "static/js/main.6aaee9cc.chunk.js"
+  ]
+}
